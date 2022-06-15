@@ -1,0 +1,195 @@
+/* 
+main background-color: #FFFFFF;
+second background-color: #F5F4FA;
+footer background-color: #2F303A
+letters in head #000000
+blue letters #2196F3
+grey letters #757575
+dark letters in al h's  #212121
+*/
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    background-color: #FFFFFF;
+    color: #212121
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*Заголовок*/
+
+.head-title {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000  
+}
+
+.head-links {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.part-title {
+    color: #2196F3;
+}
+
+.head .link {
+    color: #212121;
+}
+
+.head .contact {
+   color: #757575; 
+}
+
+.head .link:hover,
+.head .link:focus, 
+.head .contact:hover,
+.head .contact:focus, 
+.bottom .contact:hover,
+.bottom .contact:focus {
+    color: #2196F3;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #2F303A;
+    color: #FFFFFF;
+}
+
+.bottom-title {
+    color: #FFFFFF;
+}
+
+footer address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.bottom .contact {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/**/
+body p {
+    color: #757575;
+}
+
+body {
+    color: #212121
+}
+
+
+/* Hero */
+.hero {
+    background-color: #2F303A;
+    color: white;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.hero-button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.hero-button:hover {
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+/*Преимущества*/
+
+.strengths-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.strengths-text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/*Специализация*/
+
+.speciality-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+/*Коллектив*/
+
+.we {
+    background-color: #F5F4FA;
+}
+
+.we-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.we-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.we-job {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Портфолио*/
+
+/*Menu*/
+
+.menu-button {
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.menu-button:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+/*Примеры работ*/
+
+.works-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.works-text {
+    font-size: 16px;
+    line-height: 1.87;
+}
