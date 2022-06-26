@@ -7,11 +7,31 @@ blue letters #2196F3
 grey letters #757575
 dark letters in al h's  #212121
 */
+
+:root {
+    --main-background: #FFFFFF;
+    --secondary-background: #F5F4FA;
+    --accent-background: #2F303A;
+    --title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+}
+
+/*=======Universal=======*/
+
+
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
     background-color: #FFFFFF;
-    color: #212121
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);  
 }
 
 a {
@@ -26,7 +46,7 @@ button{
     cursor: pointer;
 }
 
-/*Заголовок*/
+/*=======Header=======*/
 
 .head-title {
     font-family: Raleway, sans-serif;
@@ -43,7 +63,7 @@ button{
 }
 
 .part-title {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .head .link {
@@ -51,7 +71,7 @@ button{
 }
 
 .head .contact {
-   color: #757575; 
+   color: var(--text-color); 
 }
 
 .head .link:hover,
@@ -60,13 +80,13 @@ button{
 .head .contact:focus, 
 .bottom .contact:hover,
 .bottom .contact:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-/*Footer*/
+/*=======Footer=======*/
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--accent-background);
     color: #FFFFFF;
 }
 
@@ -86,19 +106,9 @@ footer address {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/**/
-body p {
-    color: #757575;
-}
-
-body {
-    color: #212121
-}
-
-
-/* Hero */
+/*=======Hero=======*/
 .hero {
-    background-color: #2F303A;
+    background-color: var(--accent-background);
     color: white;
 }
 
@@ -106,10 +116,11 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    color: white;
 }
 
 .hero-button {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
@@ -117,7 +128,7 @@ body {
 }
 
 .hero-button:hover {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background);
     color: #212121;
 }
 
@@ -145,7 +156,7 @@ body {
 /*Коллектив*/
 
 .we {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background);
 }
 
 .we-title {
@@ -167,21 +178,21 @@ body {
 
 /* Портфолио*/
 
-/*Menu*/
+/*=======Menu=======*/
 
 .menu-button {
-    background-color: #F5F4FA;
+    background-color: var(--secondary-background);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 }
 
 .menu-button:hover {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: #FFFFFF;
 }
 
-/*Примеры работ*/
+/*=======Samples=======*/
 
 .works-title {
     font-weight: 700;
