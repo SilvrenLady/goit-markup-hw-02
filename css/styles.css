@@ -15,6 +15,8 @@ dark letters in al h's  #212121
     --title-color: #212121;
     --text-color: #757575;
     --accent-color: #2196F3;
+    --main-letters: #000000;
+    --mirror-letters: #ffffff;
 }
 
 /*=======Universal=======*/
@@ -22,8 +24,9 @@ dark letters in al h's  #212121
 
 body {
     font-family: Roboto, sans-serif;
-    font-style: normal;
-    background-color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--main-background);
     color: var(--text-color);
 }
 
@@ -53,45 +56,53 @@ button{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #000000  
+    color: var(--main-letters)  
 }
 
 .head-links {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .part-title {
     color: var(--accent-color);
 }
 
-.head .link {
-    color: #212121;
+.head-link {
+    color: var(--title-color);
 }
 
-.head .contact {
+.head .contact-link {
    color: var(--text-color); 
 }
 
-.head .link:hover,
-.head .link:focus, 
-.head .contact:hover,
-.head .contact:focus, 
-.bottom .contact:hover,
-.bottom .contact:focus {
+.head-link:hover,
+.head-link:focus,
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
 }
+
+/*.head-link:current,
+.contact-link:current {
+    color: var(--accent-color);
+}*/
 
 /*=======Footer=======*/
 
 footer {
     background-color: var(--accent-background);
-    color: #FFFFFF;
+    color: var(--mirror-letters);
 }
 
 .bottom-title {
-    color: #FFFFFF;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--mirror-letters);
 }
 
 footer address {
@@ -100,36 +111,38 @@ footer address {
     line-height: 1.71;
 }
 
-.bottom .contact {
+.bottom-contact {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.bottom-contact:hover {
+    color: var(--accent-color);
+}
+
 /*=======Hero=======*/
 .hero {
     background-color: var(--accent-background);
-    color: white;
+    color: var(--mirror-letters);
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    color: white;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--mirror-letters);
 }
 
 .hero-button {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--mirror-letters);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-}
-
-.hero-button:hover {
-    background-color: var(--secondary-background);
-    color: #212121;
+    letter-spacing: 0.06em;
 }
 
 /*Преимущества*/
@@ -187,9 +200,10 @@ footer address {
     line-height: 1.62;
 }
 
-.menu-button:hover {
+.menu-button:hover,
+.menu-button:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--mirror-letters);
 }
 
 /*=======Samples=======*/
@@ -198,6 +212,7 @@ footer address {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .works-text {
